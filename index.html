@@ -1,11 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Real Estate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不動産情報</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .property-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .property-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .property-info {
+            padding: 1.5rem;
+        }
+        
+        .property-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 0.5rem;
+        }
+        
+        .property-address {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .property-features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .property-features li {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Real Estate Page</h1>
-  <p>This is a test GitHub Pages site.</p>
+    <header>
+        <h1>不動産情報サイト</h1>
+        <p>理想の物件を見つけましょう</p>
+    </header>
+    
+    <div class="container">
+        <div class="property-grid">
+            <div class="property-card">
+                <div class="property-image">
+                    物件画像
+                </div>
+                <div class="property-info">
+                    <div class="property-price">¥25,000,000</div>
+                    <div class="property-address">東京都渋谷区恵比寿1-1-1</div>
+                    <ul class="property-features">
+                        <li>3LDK</li>
+                        <li>築5年</li>
+                        <li>駅徒歩3分</li>
+                        <li>南向き</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-image">
+                    物件画像
+                </div>
+                <div class="property-info">
+                    <div class="property-price">¥18,500,000</div>
+                    <div class="property-address">東京都新宿区西新宿2-2-2</div>
+                    <ul class="property-features">
+                        <li>2LDK</li>
+                        <li>築3年</li>
+                        <li>駅徒歩5分</li>
+                        <li>東向き</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-image">
+                    物件画像
+                </div>
+                <div class="property-info">
+                    <div class="property-price">¥32,000,000</div>
+                    <div class="property-address">東京都港区六本木3-3-3</div>
+                    <ul class="property-features">
+                        <li>4LDK</li>
+                        <li>築1年</li>
+                        <li>駅徒歩2分</li>
+                        <li>南西向き</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 不動産情報サイト. All rights reserved.</p>
+    </footer>
 </body>
 </html>
